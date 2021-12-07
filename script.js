@@ -9,7 +9,7 @@ function validar(){
         if(passwordInput.value != '' && passwordInput.value.length >= 8) {
             notify('sucess','Autenticado com sucesso!')
         } else {
-            notify('error','Informe a sua senha por gentileza.')
+            notify('error','A senha está inválida.')
             passwordInput.focus();
         }
     }
