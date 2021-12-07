@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    padding: 12px 7px;
+    outline: none;
+    border: 1px solid #8c8f93;
+    border-color: #000000;
+    transition: border 2s;
+    margin-bottom: 20px;
+}
+
+form input:focus{
+    transition: all 2s;
+    border-color: #0e0052;
+}
+
+form button{
+    border: none;
+    outline: none;
+    padding: 11px 0;
+    background: #16056b;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 7px 15px rgba(22, 55, 107, .3);
+}
+
+a {
+    margin-top: 14px;
+    font-size: 14px;
+    text-align: center;
+    color: #00249c;
+    text-decoration: none;
+}
+
+.notify {
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0,0.5);
+    border-radius: 5px;
+    color: #fff;
+    animation: slide-in 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    font-size: 13px;
+}
+
+.sucess {
+    border-top: 4px solid rgb(6, 78, 187);
+}
+
+.error {
+    border-top: 4px solid rgb(187, 6, 6);
+}
+
+.notify::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 5px 5px;
+    animation: progressbar 5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes progressbar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
