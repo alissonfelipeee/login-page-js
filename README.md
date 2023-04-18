@@ -13,4 +13,4 @@
 - O campo da senha necessita ter 8 caracteres ou mais.
 
 #### Este projeto está hospedado aqui no Github.
-<p><a href="https://dlzzdev.github.io/login-page-js/" target="_blank" rel="noopener">Clique aqui para visualizar!</p>
+<p><a href="https://alissonfelipeee.github.io/login-page-js/" target="_blank" rel="noopener">Clique aqui para visualizar!</p>
